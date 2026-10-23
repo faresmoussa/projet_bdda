@@ -13,15 +13,15 @@ Ce projet a pour objectif de concevoir et d'implémenter un moteur de base de do
 ### 🏗️ Architecture & Composants principaux
 
 - **Gestionnaire Disque (`DiskManager`)** :
-  - Allocation, désallocation, lecture et écriture de pages de données sur le disque[cite: 4].
-  - Gestion de la persistance des données et de la taille des pages (`pageSize`)[cite: 3, 4].
+  - Allocation, désallocation, lecture et écriture de pages de données sur le disque.
+  - Gestion de la persistance des données et de la taille des pages (`pageSize`).
 
-- **Gestionnaire de Tampon (`BufferManager`)**[cite: 6] :
+- **Gestionnaire de Tampon (`BufferManager`)** :
   - Cache en mémoire vive des pages lues sur le disque.
   - Implémentation des politiques de remplacement de pages pour optimiser les accès I/O.
 
-- **Gestion des Erreurs & Exceptions**[cite: 2, 6] :
-  - Exceptions personnalisées (`DiskManagerException`, `BufferManagerException`, `DBMSException`) pour assurer la robustesse de l'application[cite: 6].
+- **Gestion des Erreurs & Exceptions** :
+  - Exceptions personnalisées (`DiskManagerException`, `BufferManagerException`, `DBMSException`) pour assurer la robustesse de l'application.
 
 ### 🚀 Lancement & Utilisation
 
